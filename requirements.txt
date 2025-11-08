@@ -1,0 +1,7 @@
+beautifulsoup4
+playwright
+pandas
+numpy
+scikit-learn
+matplotlib
+joblib
