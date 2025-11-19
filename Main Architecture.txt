@@ -1,0 +1,70 @@
+# Problem Definition
+Text document stating what the problem we are trying to solve is
+
+# Data collection
+Look into the licensing of the website
+Pulling all the html from nba matches
+Getting all the relevant information from the html
+Outputting the information into a csv sheet
+
+# Data cleaning and preprocessing
+Pulling all the data from the csv sheet into a dataframe
+Remove anomalies, missing values, and errors
+Create a copy of the dataframe to a csv file for EDA
+Normalise the values ready for training the model
+Output a csv file ready for feature engineering
+
+# Exploratory Data Analysis
+Input the cleaned and processed csv file
+Explore possible trends in the data
+- Home vs away
+- Rest between games
+- etc
+
+# Feature Engineering
+Input the processed csv
+establish which features are valid, current/past
+dimensionality reduction
+feature importance
+output the new dataframe/csv
+
+# Model Selection
+Using what we know from various ml models, chose the top 3 appropriate models
+
+# Model Training
+Train the models on the dataframe
+
+# Model Evaluation
+Evaluate how the model performed
+did it underfit, overfit, perform well
+bias variance
+which model performed the best?
+what can we do to improve the model?
+
+# Model Deployment
+Deploy the model to a webserver as an API and/or website
+
+# Maintenance and Monitoring
+Drift detection
+
+--- Manage Data---
+Get win streaks, see if win streak affects winning chances
+Momentum indicator, last ten games win percentage
+
+Get the days rested since last game
+Put in a bar chart to see how it affects performance
+see if more days rested = more chance of winning next game
+
+---Feature engineering---
+Check whether top 30 predictors are supposed to be on only the features that are used
+for inference. The model should only be trained on features that can be inputted into the 
+model when used to find a prediction.
+
+Features such as the teams playing, whos at home, and the rolling averages from the last 10 games
+are the only features that should be used for training. If other features are used (data leakage)
+the model is trained on features it should not know.
+
+Do not use future features which give information the model wouldnt have
+
+---Split data correctly---
+If its time series data make sure the data is not shuffled
