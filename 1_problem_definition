@@ -1,6 +1,0 @@
-## Problem Definition
-In the world of sports, predicting if a team is going to win or lose is the million dollar question.
-With the power of artificial intelligence, it is possible to make a very solid prediction that can sway the odds in your favour.
-Vast amounts of data on nba matches exists in which we can process for meaningful trends and outcomes.
-Various developments on optimal machine learning algorithms are explored every day, and with this project it is possible to find out which one performs best.
-Once developed, this model can be deployed as an API or website for others to take advantage of.
