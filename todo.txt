@@ -4,3 +4,5 @@ Find difference between the win percentages and other stats
 Notebook for adding new games to the dataset
 for running inference on the model, pull last entry from data
 create difference in the stats for inputting into the model
+weighting for each season, where the more recent the season is, the more the results are considered for the model.
+    this is because more recent seasons may have more developed strategies and playstyles which contribute more to wins
