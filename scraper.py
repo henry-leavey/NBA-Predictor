@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import time
 
 # Seasons to scrape
-SEASONS = list(range(2016, 2025))
+SEASONS = list(range(2016, 2026))
 
 # Directories to save scraped data
 DATA_DIR = "data"
@@ -15,7 +15,7 @@ SCORES_DIR = os.path.join(DATA_DIR, "scores")
 os.makedirs(STANDINGS_DIR, exist_ok=True)
 os.makedirs(SCORES_DIR, exist_ok=True)
 
-async def get_html(url, selector, sleep=5, retries=3):
+async def get_html(url, selector, sleep=4, retries=3):
     html = None
     for i in range(1, retries+1):
         time.sleep(sleep * i)
@@ -85,4 +85,5 @@ def scrape_all_games():
         asyncio.run(scrape_game(filepath))
 
 if __name__ == "__main__":
+    scrape_seasons(SEASONS)
     scrape_all_games()
