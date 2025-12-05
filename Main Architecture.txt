@@ -7,12 +7,10 @@ Pulling all the html from nba matches
 Getting all the relevant information from the html
 Outputting the information into a csv sheet
 
-# Data cleaning and preprocessing
+# Data cleaning
 Pulling all the data from the csv sheet into a dataframe
 Remove anomalies, missing values, and errors
 Create a copy of the dataframe to a csv file for EDA
-Normalise the values ready for training the model
-Output a csv file ready for feature engineering
 
 # Exploratory Data Analysis
 Input the cleaned and processed csv file
@@ -27,6 +25,10 @@ establish which features are valid, current/past
 dimensionality reduction
 feature importance
 output the new dataframe/csv
+
+#Model Preprocessing
+Normalise the values ready for training the model
+Output a csv file ready for feature engineering
 
 # Model Selection
 Using what we know from various ml models, chose the top 3 appropriate models
